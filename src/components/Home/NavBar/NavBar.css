@@ -1,0 +1,10 @@
+
+
+.navBarContainer {
+    transition: ease-in-out .5s;
+}
+.navBarContainer li:hover{
+    background-color: aqua;
+    transform: scale(.9);
+    border-radius: 10px;
+}

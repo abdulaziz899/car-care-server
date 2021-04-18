@@ -1,0 +1,9 @@
+.homeContainer{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -50;
+    background-color: rgba(68, 65, 65, 0.945);
+    padding-bottom: 60px;
+    margin-bottom: 100px;
+}
