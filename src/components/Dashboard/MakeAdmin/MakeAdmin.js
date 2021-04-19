@@ -11,7 +11,7 @@ const MakeAdmin = () => {
         };
         console.log(data);
         console.log(createAdmin)
-        const url=`http://localhost:4000/addStaff`;
+        const url=`https://dry-lowlands-26216.herokuapp.com/addStaff`;
         fetch(url,{
             method:'POST',
             headers:{'Content-Type':'application/json'},

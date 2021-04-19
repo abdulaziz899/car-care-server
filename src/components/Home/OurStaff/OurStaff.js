@@ -4,7 +4,7 @@ import HomePageStaff from '../HomePageStaff/HomePageStaff';
 const OurStaff = () => {
     const [Staffs,setStaffs]=useState([]);
     useEffect(()=>{
-        const url=`http://localhost:4000/allStaff`;
+        const url=`https://dry-lowlands-26216.herokuapp.com/allStaff`;
         fetch(url)
         .then(res=>res.json())
         .then(data=>{
@@ -23,7 +23,7 @@ const OurStaff = () => {
                     </p>
                 </div>
             </div>
-            <div className='row ' >
+            <div className='row container-fluid' >
                 {
                     Staffs.map(staff=><HomePageStaff staff={staff} key={staff._id}></HomePageStaff>)
                 }

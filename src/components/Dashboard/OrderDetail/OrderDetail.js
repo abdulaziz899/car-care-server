@@ -13,7 +13,7 @@ const OrderDetail = (props) => {
         info.status="on going";
         setOrderState(info);
         console.log(info,id);
-        fetch(`http://localhost:4000/update/${id}`,{
+        fetch(`https://dry-lowlands-26216.herokuapp.com/update/${id}`,{
             method:'PATCH',
             headers:{'Content-Type':'application/json'},
             body:JSON.stringify(info)
@@ -25,7 +25,7 @@ const OrderDetail = (props) => {
         const info={...orderState};
         info.status="done";
         setOrderState(info);
-        fetch(`http://localhost:4000/update/${id}`,{
+        fetch(`https://dry-lowlands-26216.herokuapp.com/update/${id}`,{
             method:'PATCH',
             headers:{'Content-Type':'application/json'},
             body:JSON.stringify(info)

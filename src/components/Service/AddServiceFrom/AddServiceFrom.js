@@ -15,7 +15,7 @@ const AddServiceFrom = () => {
         };
         console.log(data);
         console.log(manageStaff)
-        const url=`http://localhost:4000/addService`;
+        const url=`https://dry-lowlands-26216.herokuapp.com/addService`;
         fetch(url,{
             method:'POST',
             headers:{'Content-Type':'application/json'},

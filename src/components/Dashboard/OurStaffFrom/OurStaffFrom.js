@@ -1,11 +1,13 @@
 import axios from 'axios';
 import { useForm } from "react-hook-form";
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import ServiceSiteBar from '../../Service/ServiceSiteBar/ServiceSiteBar';
+import { UserContext } from '../../../App';
 
 
 const OurStaffFrom = () => {
     const [imageURL,setImageURL]=useState(null);
+    const [loggedInUser, setLoggedInUser]=useContext(UserContext);
     const { register, handleSubmit,  formState: { errors } } = useForm();
     const onSubmit = data => {
         const manageStaff={
@@ -16,7 +18,7 @@ const OurStaffFrom = () => {
         };
         console.log(data);
         console.log(manageStaff)
-        const url=`http://localhost:4000/addStaff`;
+        const url=`https://dry-lowlands-26216.herokuapp.com/addStaff`;
         fetch(url,{
             method:'POST',
             headers:{'Content-Type':'application/json'},
@@ -55,7 +57,7 @@ const OurStaffFrom = () => {
                         <h2 className='text-success'>Our Staff</h2>
                     </div>
                     <div className="col-md-6 ">
-                        <h2 className='text-right'>aziz</h2>
+                    <img className='imgControls' src={loggedInUser.img} alt=""/>
                     </div>
                 </div>
                 <form  onSubmit={handleSubmit(onSubmit)}>

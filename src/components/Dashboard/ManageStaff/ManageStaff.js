@@ -6,7 +6,7 @@ import ManageStaffDetail from '../ManageStaffDetail/ManageStaffDetail';
 const ManageStaff = () => {
     const [manageStaff,setManageStaff]=useState([]);
     useEffect(()=>{
-        const url=`http://localhost:4000/allStaff`;
+        const url=`https://dry-lowlands-26216.herokuapp.com/allStaff`;
         fetch(url)
         .then(res=>res.json())
         .then(data=>{

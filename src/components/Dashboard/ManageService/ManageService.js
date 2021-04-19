@@ -5,7 +5,7 @@ import ManageServiceDetail from '../ManageServiceDetali/ManageServiceDetail';
 const ManageService = () => {
     const [manageService,setManageService]=useState([]);
     useEffect(()=>{
-        const url=`http://localhost:4000/allService`;
+        const url=`https://dry-lowlands-26216.herokuapp.com/allService`;
         fetch(url)
         .then(res=>res.json())
         .then(data=>{

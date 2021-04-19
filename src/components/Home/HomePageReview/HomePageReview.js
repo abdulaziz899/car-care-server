@@ -5,7 +5,7 @@ import HomePageReviewDetail from '../HomePageReviewDetail/HomePageReviewDetail';
 const HomePageReview = () => {
     const [reviews,setReviews]=useState([]);
     useEffect(()=>{
-        const url=`http://localhost:4000/allReview`;
+        const url=`https://dry-lowlands-26216.herokuapp.com/allReview`;
         fetch(url)
         .then(res=>res.json())
         .then(data=>{

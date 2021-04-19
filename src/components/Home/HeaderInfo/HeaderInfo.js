@@ -14,7 +14,7 @@ const HeaderInfo = () => {
                         <button className="btn btn-outline-info">Get Estimate</button>
                     </div>
                 </div>
-                <div className="col-md-6 col-sm-12 imgControl">
+                <div className="col-md-6 col-sm-12 headerImgControl">
                     <img className='img-fluid ' src={CarRepair} alt=""/>
                 </div>
             </div>

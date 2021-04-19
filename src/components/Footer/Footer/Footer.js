@@ -27,7 +27,7 @@ const Footer = () => {
                             </ul>
                     </div>
 
-                    <div className='social'>
+                    <div className='social col-sm-6 col-md-4'>
                         <h2 className='mb-5'>Flowing Social media</h2>
                         <a href="https://web.facebook.com/"  target='_blank'> <FontAwesomeIcon className='icons' icon={faFacebookF}></FontAwesomeIcon> </a>
                         <a href="https://www.google.com/" target='_blank'> <FontAwesomeIcon className='icons' icon={faGooglePlusG}></FontAwesomeIcon> </a>

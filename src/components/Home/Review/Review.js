@@ -16,7 +16,7 @@ const Review = () => {
         };
         console.log(data);
         console.log(reviewDetail)
-        const url=`http://localhost:4000/addReview`;
+        const url=`https://dry-lowlands-26216.herokuapp.com/addReview`;
         fetch(url,{
             method:'POST',
             headers:{'Content-Type':'application/json'},

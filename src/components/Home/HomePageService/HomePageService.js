@@ -4,7 +4,7 @@ import HomePageServiceDetail from '../HomePageServiceDetail/HomePageServiceDetai
 const HomePageService = () => {
     const [service,setService]=useState([]);
     useEffect(()=>{
-        const url=`http://localhost:4000/allService`;
+        const url=`https://dry-lowlands-26216.herokuapp.com/allService`;
         fetch(url)
         .then(res=>res.json())
         .then(data=>{

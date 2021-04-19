@@ -12,7 +12,7 @@ const BookService = () => {
     const {serviceId}=useParams();
     const { register, handleSubmit,  formState: { errors } } = useForm();
     useEffect(()=>{
-        fetch(`http://localhost:4000/services/${serviceId}`)
+        fetch(`https://dry-lowlands-26216.herokuapp.com/services/${serviceId}`)
             .then(res=>res.json())
             .then(data=>{ 
                 setSingleService(data); 
@@ -31,11 +31,12 @@ const BookService = () => {
             email:shippingData.email,
             price:singleService.price,
             status:"pending",
+            img:singleService.imageURL,
             paymentId,
         };
         console.log(paymentId);
         console.log(users)
-        const url=`http://localhost:4000/usersDetails`;
+        const url=`https://dry-lowlands-26216.herokuapp.com/usersDetails`;
         fetch(url,{
             method:'POST',
             headers:{'Content-Type':'application/json'},

@@ -10,7 +10,7 @@ const ServiceSiteBar = () => {
     const [loggedInUser, setLoggedInUser]=useContext(UserContext);
     const [isAdmin,setIsAdmin]=useState(false);
     useEffect(()=>{
-        const url=`http://localhost:4000/isAdmin`
+        const url=`https://dry-lowlands-26216.herokuapp.com/isAdmin`
         fetch(url,{
             method:'POST',
             headers:{'Content-Type':'application/json'},

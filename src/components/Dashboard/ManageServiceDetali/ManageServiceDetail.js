@@ -7,7 +7,7 @@ const ManageServiceDetail = (props) => {
     const deleteService=id=>{
         console.log(id)
         console.log("click me")
-        fetch(`http://localhost:4000/delete/${id}`,{
+        fetch(`https://dry-lowlands-26216.herokuapp.com/delete/${id}`,{
             method:'DELETE',
         })
         .then(res=>res.json())

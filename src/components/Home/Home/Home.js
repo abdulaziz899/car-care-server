@@ -6,6 +6,7 @@ import './Home.css';
 import OurStaff from '../OurStaff/OurStaff';
 import HomePageReview from '../HomePageReview/HomePageReview';
 import Footer from '../../Footer/Footer/Footer';
+import SuccessFullWork from '../SuccessFullWork/SuccessFullWork';
 const Home = () => {
     return (
         <div  >
@@ -14,6 +15,7 @@ const Home = () => {
              <HeaderInfo></HeaderInfo>
            </div>
            <HomePageService></HomePageService>
+           <SuccessFullWork></SuccessFullWork>
            <OurStaff></OurStaff>
            <HomePageReview></HomePageReview>
            <Footer></Footer>
